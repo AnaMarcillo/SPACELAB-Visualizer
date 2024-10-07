@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Experiments | ECLIPSA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="http://webthemez.com" />
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/jcarousel.css" rel="stylesheet" />
+    <link href="css/flexslider.css" rel="stylesheet" />
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+        /* Fondo principal con imagen de fondo */
+        body {
+            background: url('img/fondo.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #b0b0d9;
+            margin: 0;
+        }
+
+        /* Estilo para la barra de navegación */
+        .navbar-default {
+            background-color: #000345;
+            border-color: #000345;
+        }
+
+        .navbar-default .navbar-nav > li > a {
+            color: #b0b0d9;
+        }
+
+        .navbar-default .navbar-nav > li.active > a,
+        .navbar-default .navbar-nav > li > a:hover {
+            background-color: #000345;
+            color: #b0b0d9;
+        }
+
+        h3 {
+            color: #b0b0d9;
+        }
+
+        /* Botones */
+        .btn-primary {
+            background-color: #000345;
+            border-color: #000345;
+            color: #b0b0d9;
+        }
+
+        .btn-primary:hover {
+            background-color: #4c4ca1;
+        }
+
+        /* Pestañas de los experimentos */
+        .nav-tabs > li > a {
+            color: #b0b0d9;
+            background-color: #000345;
+        }
+
+        .nav-tabs > li.active > a, 
+        .nav-tabs > li.active > a:hover {
+            background-color: #4c4ca1;
+            color: #b0b0d9;
+        }
+
+        .tab-content {
+            margin-top: 20px;
+        }
+
+        /* Contenido de Methodology */
+        .methodology-tab-content h4 {
+            color: #b0b0d9;
+        }
+
+        .diagram {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #b0b0d9;
+            border: 1px solid #4c4ca1;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- start header -->
+        <header>
+            <div class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/eclipsa-logo.png" alt="ECLIPSA logo" style="height: 80px; display: inline-block; vertical-align: middle;">
+                            <span style="font-size: 30px; color: #b0b0d9; vertical-align: middle;">ECLIPSA</span>
+                        </a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="visualizer.html">Visualizer</a></li>
+                            
+                            <li class="active"><a href="methodology.html">Experiments</a></li>
+							<li><a href="guide.html">Guide</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+
+        <section id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Experiments</h2>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#exp1">ODD-665: Right extensor digitorum longus muscle</a></li>
+                            <li><a data-toggle="tab" href="#exp2">ODD-580: Heart tissue (RRRM-2)</a></li>
+                            <li><a data-toggle="tab" href="#exp3">ODD-274: Soleus</a></li>
+                            <li><a data-toggle="tab" href="#exp4">ODD-540: Unilateral lower limb suspension</a></li>
+                            <li><a data-toggle="tab" href="#exp5">ODD-379: Liver (RRRM-1)</a></li>
+                            <li><a data-toggle="tab" href="#exp6">ODD-273: Rapid freeze</a></li>
+                            <li><a data-toggle="tab" href="#exp7">ODD-245: RR-6 Transcriptional Analysis</a></li>
+                            <li><a data-toggle="tab" href="#exp8">ODD-242: RR-9 Transcriptional Analysis</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <!-- Experiment 1 -->
+                            <div id="exp1" class="tab-pane fade in active">
+                                <h3>ODD-665: Right extensor digitorum longus muscle</h3>
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#desc1">Description</a></li>
+                                    <li><a data-toggle="tab" href="#details1">Details</a></li>
+                                    <li><a data-toggle="tab" href="#method1">Methodology</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <!-- Description -->
+                                    <div id="desc1" class="tab-pane fade in active">
+                                        <p>This study focuses on the effects of spaceflight on ocular vasculature, which may be responsible for Spaceflight-associated neuro-ocular syndrome (SANS). The research involves assessing how microgravity impacts arteries, veins, and lymphatic structures.</p>
+                                    </div>
+                                    <!-- Details -->
+                                    <div id="details1" class="tab-pane fade">
+                                        <p><strong>Study Type:</strong> Spaceflight<br>
+                                            <strong>Species:</strong> Mus musculus<br>
+                                            <strong>Assay:</strong> RNA-Seq<br>
+                                            <strong>Mission:</strong> RR-23<br>
+                                            <strong>Transporter:</strong> Rodent Flight HARDWARE
+                                        </p>
+                                    </div>
+                                    <!-- Methodology -->
+                                    <div id="method1" class="tab-pane fade">
+                                        <p><strong>Animal Care:</strong> 20 male mice, launched via SpaceX-21, kept in microgravity for 38 days.<br>
+                                            <strong>Sample Collection:</strong> Tissues collected post-flight at TAMU, analyzed with RNA-Seq.<br>
+                                            <strong>Data Analysis:</strong> ANOVA used to assess vascular reactivity and gene expression.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Experiment 2 -->
+                            <div id="exp2" class="tab-pane fade">
+                                <h3>ODD-580: Heart tissue (RRRM-2)</h3>
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#desc2">Description</a></li>
+                                    <li><a data-toggle="tab" href="#details2">Details</a></li>
+                                    <li><a data-toggle="tab" href="#method2">Methodology</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <!-- Description -->
+                                    <div id="desc2" class="tab-pane fade in active">
+                                        <p>This study analyzes heart tissue to understand how spaceflight impacts cardiovascular structure and function, focusing on transcriptional changes.</p>
+                                    </div>
+                                    <!-- Details -->
+                                    <div id="details2" class="tab-pane fade">
+                                        <p><strong>Study Type:</strong> Spaceflight<br>
+                                            <strong>Species:</strong> Mus musculus<br>
+                                            <strong>Assay:</strong> RNA-Seq<br>
+                                            <strong>Mission:</strong> RR-2<br>
+                                            <strong>Tool:</strong> Illumina
+                                        </p>
+                                    </div>
+                                    <!-- Methodology -->
+                                    <div id="method2" class="tab-pane fade">
+                                        <p><strong>Animal Care:</strong> 40 female mice, flown on ISS, separated by age group.<br>
+                                            <strong>Sample Collection:</strong> Post-flight tissue dissection at NASA KSC.<br>
+                                            <strong>Data Analysis:</strong> Gene expression data analyzed for cardiovascular changes.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Experiment 3 -->
+                            <div id="exp3" class="tab-pane fade">
+                                <h3>ODD-274: Soleus</h3>
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#desc3">Description</a></li>
+                                    <li><a data-toggle="tab" href="#details3">Details</a></li>
+                                    <li><a data-toggle="tab" href="#method3">Methodology</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <!-- Description -->
+                                    <div id="desc3" class="tab-pane fade in active">
+                                        <p>The study investigates transcriptional changes in the soleus muscle, focusing on how spaceflight influences muscle structure and function.</p>
+                                    </div>
+                                    <!-- Details -->
+                                    <div id="details3" class="tab-pane fade">
+                                        <p><strong>Study Type:</strong> Ground Study<br>
+                                            <strong>Species:</strong> Mus musculus<br>
+                                            <strong>Assay:</strong> RNA-Seq<br>
+                                            <strong>Technique:</strong> Transcriptomics
+                                        </p>
+                                    </div>
+                                    <!-- Methodology -->
+                                    <div id="method3" class="tab-pane fade">
+                                        <p><strong>Animal Care:</strong> 10 mice, subjected to simulated spaceflight.<br>
+                                            <strong>Sample Collection:</strong> Muscle tissues collected post-simulation.<br>
+                                            <strong>Data Analysis:</strong> RNA sequencing and analysis of muscle gene expression.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Experiment 4 -->
+                            <div id="exp4" class="tab-pane fade">
+                                <h3>ODD-540: Unilateral lower limb suspension</h3>
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#desc4">Description</a></li>
+                                    <li><a data-toggle="tab" href="#details4">Details</a></li>
+                                    <li><a data-toggle="tab" href="#method4">Methodology</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <!-- Description -->
+                                    <div id="desc4" class="tab-pane fade in active">
+                                        <p>This experiment examines the effects of lower limb suspension on neuromuscular junctions and motor units in humans under simulated microgravity conditions.</p>
+                                    </div>
+                                    <!-- Details -->
+                                    <div id="details4" class="tab-pane fade">
+                                        <p><strong>Study Type:</strong> Ground Study<br>
+                                            <strong>Species:</strong> Homo sapiens<br>
+                                            <strong>Assay:</strong> Electrophysiology<br>
+                                            <strong>Technique:</strong> Biopsy Analysis
+                                        </p>
+                                    </div>
+                                    <!-- Methodology -->
+                                    <div id="method4" class="tab-pane fade">
+                                        <p><strong>Protocol:</strong> 20 participants, 30 days suspension.<br>
+                                            <strong>Sample Collection:</strong> Biopsies from muscles pre- and post-suspension.<br>
+                                            <strong>Data Analysis:</strong> Electrophysiological recordings and histology.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Experiment 5 -->
+                            <div id="exp5" class="tab-pane fade">
+                                <h3>ODD-379: Liver (RRRM-1)</h3>
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#desc5">Description</a></li>
+                                    <li><a data-toggle="tab" href="#details5">Details</a></li>
+                                    <li><a data-toggle="tab" href="#method5">Methodology</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <!-- Description -->
+                                    <div id="desc5" class="tab-pane fade in active">
+                                        <p>Analysis of liver tissue to assess metabolic changes caused by spaceflight, focusing on transcriptional profiling in liver cells.</p>
+                                    </div>
+                                    <!-- Details -->
+                                    <div id="details5" class="tab-pane fade">
+                                        <p><strong>Study Type:</strong> Spaceflight<br>
+                                            <strong>Species:</strong> Mus musculus<br>
+                                            <strong>Assay:</strong> RNA-Seq<br>
+                                            <strong>Technique:</strong> Transcriptomics
+                                        </p>
+                                    </div>
+                                    <!-- Methodology -->
+                                    <div id="method5" class="tab-pane fade">
+                                        <p><strong>Animal Care:</strong> 40 female mice flown on ISS for 58 days.<br>
+                                            <strong>Sample Collection:</strong> Post-flight liver tissue biopsies.<br>
+                                            <strong>Data Analysis:</strong> RNA sequencing and pathway analysis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Experiment 6 -->
+                            <div id="exp6" class="tab-pane fade">
+                                <h3>ODD-273: Rapid freeze</h3>
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#desc6">Description</a></li>
+                                    <li><a data-toggle="tab" href="#details6">Details</a></li>
+                                    <li><a data-toggle="tab" href="#method6">Methodology</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <!-- Description -->
+                                    <div id="desc6" class="tab-pane fade in active">
+                                        <p>This study compares tissue preservation protocols during spaceflight, with a focus on rapid freeze techniques for RNA preservation.</p>
+                                    </div>
+                                    <!-- Details -->
+                                    <div id="details6" class="tab-pane fade">
+                                        <p><strong>Study Type:</strong> Spaceflight<br>
+                                            <strong>Species:</strong> Mus musculus<br>
+                                            <strong>Assay:</strong> RNA-Seq<br>
+                                            <strong>Technique:</strong> Preservation Techniques
+                                        </p>
+                                    </div>
+                                    <!-- Methodology -->
+                                    <div id="method6" class="tab-pane fade">
+                                        <p><strong>Protocol:</strong> Tissue collection with rapid freeze.<br>
+                                            <strong>Sample Collection:</strong> RNA extraction using various protocols.<br>
+                                            <strong>Data Analysis:</strong> Quality control and RNA integrity.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+							<!-- Experiment 7 -->
+							<div id="exp7" class="tab-pane fade">
+								<h3>ODD-245: RR-6 Transcriptional Analysis</h3>
+								<ul class="nav nav-tabs">
+									<li class="active"><a data-toggle="tab" href="#desc7">Description</a></li>
+									<li><a data-toggle="tab" href="#details7">Details</a></li>
+									<li><a data-toggle="tab" href="#method7">Methodology</a></li>
+								</ul>
+								<div class="tab-content">
+									<!-- Description -->
+									<div id="desc7" class="tab-pane fade in active">
+										<p>This analysis focuses on the transcriptional changes in response to specific stimuli in a rodent model, evaluating gene expression patterns.</p>
+									</div>
+									<!-- Details -->
+									<div id="details7" class="tab-pane fade">
+										<p><strong>Study Type:</strong> Ground Study<br>
+											<strong>Species:</strong> Mus musculus<br>
+											<strong>Assay:</strong> RNA-Seq<br>
+											<strong>Technique:</strong> Transcriptomics
+										</p>
+									</div>
+									<!-- Methodology -->
+									<div id="method7" class="tab-pane fade">
+										<p><strong>Animal Care:</strong> 30 mice subjected to specific treatments.<br>
+											<strong>Sample Collection:</strong> Tissue samples taken pre- and post-treatment.<br>
+											<strong>Data Analysis:</strong> Differential expression analysis conducted using bioinformatics tools.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Experiment 8 -->
+							<div id="exp8" class="tab-pane fade">
+								<h3>ODD-242: RR-9 Transcriptional Analysis</h3>
+								<ul class="nav nav-tabs">
+									<li class="active"><a data-toggle="tab" href="#desc8">Description</a></li>
+									<li><a data-toggle="tab" href="#details8">Details</a></li>
+									<li><a data-toggle="tab" href="#method8">Methodology</a></li>
+								</ul>
+								<div class="tab-content">
+									<!-- Description -->
+									<div id="desc8" class="tab-pane fade in active">
+										<p>This experiment analyzes the transcriptional response of tissues exposed to microgravity conditions, focusing on the identification of gene regulatory networks.</p>
+									</div>
+									<!-- Details -->
+									<div id="details8" class="tab-pane fade">
+										<p><strong>Study Type:</strong> Spaceflight<br>
+											<strong>Species:</strong> Mus musculus<br>
+											<strong>Assay:</strong> RNA-Seq<br>
+											<strong>Technique:</strong> Transcriptomics
+										</p>
+									</div>
+									<!-- Methodology -->
+									<div id="method8" class="tab-pane fade">
+										<p><strong>Animal Care:</strong> 25 mice, flown on the ISS.<br>
+											<strong>Sample Collection:</strong> Tissues collected during the flight.<br>
+											<strong>Data Analysis:</strong> Comprehensive analysis using RNA sequencing data to understand microgravity effects.
+										</p>
+									</div>
+								</div>
+							</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- jQuery and Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

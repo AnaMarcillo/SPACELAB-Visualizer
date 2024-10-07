@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pestañas de Gráficos</title>
+    <style>
+        * {
+            box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho y alto total */
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .tab {
+            display: none;
+            height: calc(100vh - 50px); /* Ajusta la altura del contenido restando la altura de las pestañas */
+            overflow: hidden; /* Evita el desbordamiento del contenido */
+        }
+        .tab-button {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            display: inline-block;
+            margin-right: 5px; /* Espaciado entre los botones */
+        }
+        .tab-button.active {
+            background-color: #ddd;
+        }
+        iframe {
+            width: 100%;
+            height: 100%; /* Ajusta la altura al 100% del contenedor */
+            border: none;
+            overflow: auto; /* Permite el desplazamiento si el contenido es más grande */
+        }
+    </style>
+    <script type="text/javascript">
+        function openTab(event, tabName) {
+            // Ocultar todas las pestañas
+            var i, tabcontent, tabbuttons;
+            tabcontent = document.getElementsByClassName("tab");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remover la clase activa de todos los botones
+            tabbuttons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
+            }
+
+            // Mostrar la pestaña activa y agregar la clase activa al botón
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.className += " active";
+        }
+    </script>
+</head>
+<body>
+
+    <div>
+        <div class="tab-button active" onclick="openTab(event, 'all_graphs')">General</div>
+        <div class="tab-button" onclick="openTab(event, 'fastqc_per_sequence_quality_scores')">FastQC Per Sequence Quality Scores</div>
+        <div class="tab-button" onclick="openTab(event, 'fastqc_quality_scores')">FastQC Quality Scores</div>
+        <div class="tab-button" onclick="openTab(event, 'unique_duplicate_reads')">Unique Duplicate Reads</div>
+    </div>
+
+    <div id="all_graphs" class="tab" style="display: block;">
+        <iframe src="C:/Users/Usuario/Desktop/NASA/Eclipsav1/all_graphs.html"></iframe>
+    </div>
+
+    <div id="fastqc_per_sequence_quality_scores" class="tab">
+        <iframe src="C:/Users/Usuario/Desktop/NASA/Eclipsav1/fastqc_per_sequence_quality_scores.html"></iframe>
+    </div>
+
+    <div id="fastqc_quality_scores" class="tab">
+        <iframe src="C:/Users/Usuario/Desktop/NASA/Eclipsav1/fastqc_quality_scores.html"></iframe>
+    </div>
+
+    <div id="unique_duplicate_reads" class="tab">
+        <iframe src="C:/Users/Usuario/Desktop/NASA/Eclipsav1/unique_duplicate_reads.html"></iframe>
+    </div>
+
+</body>
+</html>

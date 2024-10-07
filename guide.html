@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ECLIPSA Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+        /* Fondo principal con imagen de fondo */
+        body {
+            background: url('img/fondo.png') no-repeat center center fixed; /* Imagen de fondo */
+            background-size: cover; /* Ajusta el fondo para que cubra la pantalla */
+            color: #b0b0d9; /* Color del texto principal */
+            margin: 0; /* Eliminar márgenes */
+        }
+
+        /* Estilo para la barra de navegación */
+        .navbar-default {
+            background-color: #000345; /* Cambiado a #000345 */
+            border-color: #000345; /* También cambió el borde al mismo color */
+        }
+
+        /* Enlaces en la barra de navegación */
+        .navbar-default .navbar-nav > li > a {
+            color: #b0b0d9; /* Color claro para el texto en la barra */
+        }
+
+        .navbar-default .navbar-nav > li.active > a,
+        .navbar-default .navbar-nav > li > a:hover {
+            background-color: #000345; /* Cambiado a #000345 */
+            color: #b0b0d9; /* Asegúrate de que el color del texto sea claro */
+        }
+
+        /* Estilo del slider */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        /* Estilo para las imágenes del carrusel */
+        .carousel-inner img {
+            border: 5px solid black; /* Marco negro */
+            border-radius: 5px; /* Esquinas redondeadas (opcional) */
+            max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+            height: auto; /* Mantiene la relación de aspecto */
+        }
+
+        /* Estilo para la caja de texto de los pasos */
+        .carousel-caption {
+            background-color: rgba(0, 0, 128, 0.7); /* Azul marino oscuro transparente */
+            color: white; /* Color de texto en blanco */
+            padding: 20px; /* Espaciado dentro de la caja de texto */
+            border-radius: 10px; /* Esquinas redondeadas */
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- start header -->
+        <header>
+            <div class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/eclipsa-logo.png" alt="ECLIPSA logo" style="height: 80px;">
+                            <span style="font-size: 30px; color: #b0b0d9;">ECLIPSA</span>
+                        </a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="visualizer.html">Visualizer</a></li>
+                            <li class="active"><a href="guide.html">Guide</a></li>
+                            <li><a href="methodology.html">Experiments</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+        
+        <section id="featured">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/A.jpeg" alt="Step 1">
+                        <div class="carousel-caption">
+                            <h3>Step 1: Introduction</h3>
+                            <p>You will see the homepage where you will find relevant information. Review it if needed. On the top left, you have different tabs like <strong>EXPERIMENTS</strong>, where you can view all the databases we are handling in this version, which includes approximately 10 mouse experiments and one human experiment for comparison. Here you will find descriptions, details, and methodologies of these experiments. In <strong>Guide</strong>, you will see a step-by-step guide on how to use our platform, and in <strong>About Us</strong>, you can find information about our team. Our focus is the <strong>VISUALIZER</strong> tab, so click there! ;)</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/B.jpeg" alt="Step 2">
+                        <div class="carousel-caption">
+                            <h3>Step 2: Anatomy Overview</h3>
+                            <p>Here you will observe a mouse of the species <strong>Mus musculus</strong>, and you have two buttons below to observe its anatomy.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/c.jpeg" alt="Step 3">
+                        <div class="carousel-caption">
+                            <h3>Step 3: Organs</h3>
+                            <p>If you click on <strong>ORGANS</strong>, you will see all its organs. Here you can scroll and click on different organs to check if there are experiments related to them at this version.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/D.jpeg" alt="Step 4">
+                        <div class="carousel-caption">
+                            <h3>Step 4: Experiment Information</h3>
+                            <p>If you select an experiment, you can view its information in the right panel, including a brief description, details, and a visualization option.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/E.jpeg" alt="Step 5">
+                        <div class="carousel-caption">
+                            <h3>Step 5: Visualization</h3>
+                            <p>By clicking on <strong>Visualize</strong>, you will be taken to the most important part of our platform, where you will see MultiQC reports, which are reports of all the data generated by the experiments in HTML format. Here you can visualize and interactively explore the data according to the expected information. Within this same menu, you can visualize various experiments and different types of reports; use your knowledge and expertise to navigate through them.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/F.jpeg" alt="Step 6">
+                        <div class="carousel-caption">
+                            <h3>Step 6: Returning</h3>
+                            <p>If you click on the return menu, you can see the anatomical diagram of the mouse again and explore its muscles. Different details of the model will also be presented. You can repeat the action.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/g.jpg" alt="Step 7">
+                        <div class="carousel-caption">
+                            <h3>Step 7: AI Integration</h3>
+                            <p>This platform will include a lightweight GPT-2 model trained with data from bioinformatics, mouse experiments, methodologies, and information from various datasets in the NASA open repository, where users can ask questions and access information to better understand the data.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
